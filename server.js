@@ -30,10 +30,9 @@ db.connect((err) => {
     console.log("Connected to MySQL Database!");
 });
 
-// 7. Define Routes
-app.get('/', (req, res) => {
-    res.send('Welcome to My Backend Server!');
-});
+app.get('/', (req, res) => { 
+res.send('Welcome to My Updated Backend Server!'); 
+}); 
 
 app.get('/api/user', (req, res) => {
     res.json({ name: "John Doe", email: "john@example.com" });
